@@ -1,0 +1,23 @@
+%[piano fs]=audioread('sample.wav');
+%dt = 1/fs; %korak uzorkovanja
+%N=size(piano,1); %broj uzoraka
+%t = (0:N-1)*dt; %vektor vremena
+%figure;
+%plot(t,piano);
+%xlabel('Vrijeme [s]')
+%title('Tipka C4 na piano-u u vremenu')
+
+%fq = 1000;
+%M = 5000;
+%a = 10;
+%fi = 0;
+%fqz = 10;
+%timeVector = (0:M-1) * 1/fq;
+%signal = a * sin(2*pi*fqz*timeVector + fi);
+
+[signal, time] = signalGen(;
+
+figure;
+plot(timeVector, signal);
+xlabel('Vrijeme [s]');
+title('Moj signal');
