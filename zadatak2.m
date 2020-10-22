@@ -21,5 +21,6 @@ plotFqSingle(s3, sf, "3 Single side");
 SS = s1 + s2 + s3;
 
 plotTime(SS, t1, "Signal Sum");
-plotFq(s3,sf,"FqSignal Sum");
-plotFqSingle(s3, sf, "Sum Single side");
+plotFq(SS,sf,"FqSignal Sum");
+plotFqSingle(SS, sf, "Sum Single side");
+spect(SS, "SS");
